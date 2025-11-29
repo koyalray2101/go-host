@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoHost | Secure Web Hosting</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <img src="./images/LOGO.png" alt="">
+        <ul class="menu">
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="" class="menu-item">Domains</a></li>
+            <li><a href="" class="menu-item">Security</a></li>
+            <li><a href="" class="menu-item">Email</a></li>
+            <li><a href="signup.html" class="menu-item btn-login">Sign Up/In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Form -->
+
+    <section class="signup">
+        <div class="signup-card">
+            <div class="card-header">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="card-body">
+                <form action="index.html" method="get" onsubmit="validate(event)">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" id="name">
+                        <label class="error" id="nameError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Other">Other
+                        <label class="error" id="genderError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select id="country">
+                            <option value="">--Select--</option>
+                            <option value="India">India</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <label class="error" id="countryError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label><br>
+                        <textarea name="address" id="address" rows="4" cols="45"></textarea>
+                        <label class="error" id="addressError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                        <label class="error" id="dobError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile</label>
+                        <input type="tel" name="mobile" id="mobile">
+                        <label class="error" id="mobileError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                        <label class="error" id="emailError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password">
+                        <label class="error" id="passwordError"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" name="password2" id="password2">
+                        <label class="error" id="password2Error"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="accept">Accept the terms and conditions
+                        <label class="error" id="acceptError"></label>
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn-signup">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./js/form-validator.js"></script>
+</body>
+</html>
