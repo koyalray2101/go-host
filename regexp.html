@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RegExp</h1>
+    <script>
+        //set of characters works as a pattern to search combination of chars in a string.
+        // let str = "ECMAScript 6 is the better version of JavaScript"
+        // let pat = /a/  /*return Array*/
+        // let pat = /x/  /*return null*/
+
+        // i -> case insenstive search and g->Global Search are flags
+        // let pat = /a/ig
+
+        // let pat = /java/i
+        // let pat = /[0-9]/
+        // let pat = /[\d]/   /*/d is for digits*/
+        // let pat = /[a-z]/
+        // let pat = /[\w]/   /* w stands for any character*/
+        // let pat = /[\W]/  /*W stands for white space character*/
+
+        // let s = "java script language"
+        // let pat = /[a-z]{3,10}/
+        // let pat = /[a-z]*/  /*0 or more*/
+        // let pat = /[a-z]+/  /*1 or more*/
+
+        //^ -> starts with
+        // $-> ends with
+
+        // let s = "aaAA"
+        // let pat = /[a-z][A-Z]/
+
+        // let s = "abcdABCD"
+        // let pat = /[a-z]{2,5}[A-Z]{1,3}/
+        // let s = "98abcdABCD"
+        // let pat = /^[a-z]{2,5}[A-Z]{1,3}/
+
+        let s = "aaaaaa.dfne"
+        let pat = /^[a-z]{5,8}\.[a-z]{2,5}/
+        console.log(s.match(pat));
+    </script>
+</body>
+</html>
